@@ -1,0 +1,27 @@
+name: TwigGetfilecontentsPlugin
+version: 0.1.0
+description: adds the TWIG function getfilecontents($filePath) to embed contents of page files (e.g. SVG) inline.
+icon: plug
+author:
+  name: gebeer
+  email: gerhard.sitzmann@gmail.com
+homepage: https://github.com/gebeer/grav-plugin-twig-getfilecontents
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/gebeer/grav-plugin-twig-getfilecontents/issues
+docs: https://github.com/gebeer/grav-plugin-twig-getfilecontents/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
